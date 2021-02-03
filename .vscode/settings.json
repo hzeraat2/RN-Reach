@@ -1,0 +1,16 @@
+{
+  "editor.formatOnSave": true,
+  "javascript.validate.enable": false,
+  "eslint.alwaysShowStatus": true,
+  "editor.tabSize": 2,
+  "editor.useTabStops": false,
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}
