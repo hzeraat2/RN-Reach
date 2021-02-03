@@ -1,11 +1,12 @@
 import { createStackNavigator, createAppContainer } from "react-navigation";
+import {} from "@react-navigation/stack"
 import Home from './components/Home';
-import NewsArticles from './components/NewsArticles';
+import NewsArticle from './components/NewsArticle';
 
 const AppNavigator = createStackNavigator(
   {
     MainScreen: Home,
-    NewsArticles: NewsArticles
+    NewsArticle: NewsArticle
   },
   {
     initialRouteName: "MainScreen"
