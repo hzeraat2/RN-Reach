@@ -29,13 +29,12 @@ const Home = ({ navigation }) => {
     navigation.navigate('NewsArticle', { id: indexOffset })
   }
 
-  console.log(list)
   return (
-    <ScrollView>
+    <ScrollView testID="main-view">
       {list.map((item, index) =>
-        <TouchableOpacity key={index} onPress={() => checkDetails(index)}>
-          <View style={styles.container}>
-            <Text style={styles.title}>{item.title}</Text>
+        <TouchableOpacity key={index} onPress={() => checkDetails(index)} testID="newsRow" >
+          <View style={styles.container} testID="title-section">
+            <Text style={styles.title} >{item.title}</Text>
             <Text style={styles.subtitle}>{item.subtitle}</Text>
           </View>
         </TouchableOpacity>
